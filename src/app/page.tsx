@@ -8,62 +8,9 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 const Portfolio = () => {
-  const router = useRouter();
   const [darkMode, setDarkMode] = useState(true);
-  const [activeTab, setActiveTab] = useState("mobile");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-
-  const projects = [
-    {
-      id: 1,
-      title: "Dating Mobile App Design",
-      category: "mobile",
-      description:
-        "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when lorem ipsum.",
-      images: [
-        "/api/placeholder/300/600",
-        "/api/placeholder/300/600",
-        "/api/placeholder/300/600",
-      ],
-    },
-    {
-      id: 2,
-      title: "E-Commerce Mobile App Design",
-      category: "mobile",
-      description:
-        "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when lorem ipsum.",
-      images: [
-        "/api/placeholder/300/600",
-        "/api/placeholder/300/600",
-        "/api/placeholder/300/600",
-      ],
-    },
-    {
-      id: 3,
-      title: "Fitness Mobile App Design",
-      category: "mobile",
-      description:
-        "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when lorem ipsum.",
-      images: [
-        "/api/placeholder/300/600",
-        "/api/placeholder/300/600",
-        "/api/placeholder/300/600",
-      ],
-    },
-    {
-      id: 4,
-      title: "Modelling Mobile App Design",
-      category: "mobile",
-      description:
-        "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when lorem ipsum.",
-      images: [
-        "/api/placeholder/300/600",
-        "/api/placeholder/300/600",
-        "/api/placeholder/300/600",
-      ],
-    },
-  ];
 
   const services = [
     {
@@ -181,8 +128,8 @@ const Portfolio = () => {
             <div className="w-full aspect-square rounded-3xl overflow-hidden border-4 border-blue-500/20 transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/p.JPG"
-                width= {200}
-                height={200}
+                width= {2000}
+                height={2000}
                 alt="Profile"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
