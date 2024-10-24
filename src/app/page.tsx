@@ -5,6 +5,7 @@ import { Mail, Phone, MapPin, Send, Sun, Moon, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 const Portfolio = () => {
   const router = useRouter();
@@ -258,9 +259,11 @@ const Portfolio = () => {
                 key={index}
                 className="aspect-square rounded-xl bg-[#1A2942] p-4 flex items-center justify-center hover:scale-110 transition-transform"
               >
-                <img
+                <Image
                   src={exp.icon}
                   alt={exp.name}
+                  width={50}
+                  height={50}
                   className="w-10 h-10 object-contain"
                 />
               </div>

@@ -18,7 +18,7 @@ export default function Navbar({
 }: NavbarProps) {
   return (
     <nav
-      className={`fixed top-0 w-full backdrop-blur-sm z-50 px-4 py-2 transition-colors duration-300 ${
+      className={`fixed top-0 w-full backdrop-blur-sm z-50 px-4 py-2 lg:py-9 transition-colors duration-300 ${
         darkMode ? "bg-[#0A192F]/90" : "bg-white/90"
       }`}
     >
