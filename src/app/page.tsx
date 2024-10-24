@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
