@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Mail, Phone, MapPin, Send, Sun, Moon, Menu, X } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
@@ -179,8 +179,10 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="relative group animate-fade-in">
             <div className="w-full aspect-square rounded-3xl overflow-hidden border-4 border-blue-500/20 transition-transform duration-300 group-hover:scale-105">
-              <img
+              <Image
                 src="/p.JPG"
+                width= {200}
+                height={200}
                 alt="Profile"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />

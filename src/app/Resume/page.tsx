@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Github, Linkedin, Sun, Moon } from "lucide-react";
+import { Mail, Phone, MapPin} from "lucide-react";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 const ResumePage = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -36,8 +37,10 @@ const ResumePage = () => {
               <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                 {/* Profile Image */}
                 <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0 border-4 border-blue-500">
-                  <img
-                    src="/api/placeholder/200/200"
+                  <Image
+                    src="/p.JPG"
+                    width={200}
+                    height={200}
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
@@ -66,22 +69,6 @@ const ResumePage = () => {
                       <MapPin className="w-5 h-5 text-blue-500" />
                       <span>Kota, Provinsi</span>
                     </div>
-                  </div>
-
-                  {/* Social Links */}
-                  <div className="mt-4 flex gap-4 justify-center md:justify-start">
-                    <a
-                      href="#"
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-500"
-                    >
-                      <Github className="w-6 h-6" />
-                    </a>
-                    <a
-                      href="#"
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-500"
-                    >
-                      <Linkedin className="w-6 h-6" />
-                    </a>
                   </div>
                 </div>
               </div>
